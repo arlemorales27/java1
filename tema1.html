@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos y Lógica Computacional</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .key-term { color: #1D4ED8; font-weight: bold; }
+        .section-title { color: #6B46C1; }
+        .chart-container { max-width: 600px; margin: 0 auto; }
+        img { max-width: 100%; height: auto; }
+        .section { border-left: 4px solid #3B82F6; padding-left: 1rem; }
+        pre { background-color: #f4f4f4; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
+        code { font-family: 'Courier New', Courier, monospace; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+        th { background-color: #f4f4f4; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+<header class="bg-blue-600 text-white py-8">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold">Algoritmos y Lógica Computacional</h1>
+        <p class="mt-2 text-lg">Una guía completa para entender los fundamentos de la programación y el diseño de algoritmos</p>
+    </div>
+</header>
+
+<main class="container mx-auto px-4 py-12">
+    <!-- Sección 1 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-laptop-code mr-2"></i> 1. ¿Qué es el software?</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>El <span class="key-term">software</span> es un conjunto de <span class="key-term">instrucciones</span> o <span class="key-term">programas</span> que le indican a una computadora qué hacer. Es el componente intangible de un sistema informático, a diferencia del <span class="key-term">hardware</span>, que es el componente físico.</p>
+        </div>
+    </section>
+
+    <!-- Sección 2 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-desktop mr-2"></i> 2. Tipos de software</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2"><span class="key-term">Software</span> Web</h3>
+            <p>Aplicaciones que se ejecutan en un <span class="key-term">navegador</span>, como <span class="key-term">Google Chrome</span> o <span class="key-term">Firefox</span>. Ejemplo: <span class="key-term">Gmail</span>.</p>
+            <h3 class="text-xl font-semibold mt-4 mb-2"><span class="key-term">Software</span> de Escritorio</h3>
+            <p>Programas instalados en una computadora, como <span class="key-term">Microsoft Word</span> o <span class="key-term">Visual Studio Code</span>.</p>
+            <h3 class="text-xl font-semibold mt-4 mb-2"><span class="key-term">Software</span> Móvil</h3>
+            <p>Aplicaciones diseñadas para dispositivos móviles, como <span class="key-term">WhatsApp</span> o juegos en <span class="key-term">Android</span>/<span class="key-term">iOS</span>.</p>
+            <img src="https://yeeply.com/wp-content/uploads/2023/08/Imagenes-articulos-Blog-Yeeply-1.jpg" alt="Tipos de software" class="my-4 rounded">
+        </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-code mr-2"></i> 3. Lenguajes de programación</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>Un <span class="key-term">lenguaje de programación</span> es un medio para comunicarse con las computadoras mediante <span class="key-term">instrucciones</span>. Los lenguajes más populares dependen del objetivo:</p>
+            <ul class="list-disc ml-6 mt-2">
+                <li><strong>Web:</strong> <span class="key-term">Java</span>, <span class="key-term">HTML</span>, <span class="key-term">CSS</span></li>
+                <li><strong>Móvil:</strong> <span class="key-term">Swift</span> (iOS), <span class="key-term">Kotlin</span> (Android)</li>
+                <li><strong>Escritorio:</strong> <span class="key-term">C#</span>, <span class="key-term">Java</span></li>
+                <li><strong>Datos/IA:</strong> <span class="key-term">Python</span>, <span class="key-term">R</span></li>
+            </ul>
+            <img src="https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/494846766_1230695445730407_7260991251342999399_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHNpZct6e2F41-YM4vst-kl-5IRq7dedy_7khGrt153LzDTSH-oy5jILsblU82T9Ew&_nc_ohc=msiIhnziGCsQ7kNvwEZOBNg&_nc_oc=AdkBsfyPU6XL6WzwUy76Zk1VRIGPyqeNlPPiHAGeQPuLUmtBM7fvMITEQF03O_uyoUe6BibFj8cWVI7Em1S9cV39&_nc_zt=23&_nc_ht=scontent.feoh3-1.fna&_nc_gid=6ZIMek_N6UE2kuy407g9_g&oh=00_AfXW6_ZPh1-Diicph2wH0MR3-KT8ePfXkNwK6tvKUuUDCQ&oe=68960A41" alt="Tipos de algoritmos" class="my-4 rounded">
+        </div>
+    </section>
+
+    <!-- Sección 4 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-cogs mr-2"></i> 4. ¿Qué es un algoritmo?</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>Un <span class="key-term">algoritmo</span> es una secuencia de pasos finitos y ordenados para resolver un <span class="key-term">problema</span>. Ejemplo: una receta de cocina es un <span class="key-term">algoritmo</span>.</p>
+        </div>
+    </section>
+
+    <!-- Sección 5 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-list mr-2"></i> 5. Tipos de algoritmos y ejemplos</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <ul class="list-disc ml-6">
+                <li><strong>Búsqueda:</strong> <span class="key-term">Búsqueda binaria</span> para encontrar un elemento en una lista ordenada.</li>
+                <li><strong>Ordenamiento:</strong> <span class="key-term">Algoritmo de burbuja</span> para ordenar una lista.</li>
+                <li><strong>Recursivos:</strong> Cálculo del <span class="key-term">factorial</span> de un número.</li>
+            </ul>
+            <img src="https://pbs.twimg.com/media/Ez15-CeWUAYGg5b?format=jpg&name=large" alt="Tipos de algoritmos" class="my-4 rounded">
+        </div>
+    </section>
+
+    <!-- Sección 6 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-project-diagram mr-2"></i> 6. Representación de un algoritmo</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2"><span class="key-term">Pseudocódigo</span></h3>
+            <pre class="bg-gray-200 p-2 rounded">Inicio
+    Leer número
+    Si número > 0 entonces
+        Escribir "<span class="key-term">Número positivo</span>"
+    Sino
+        Escribir "<span class="key-term">Número no positivo</span>"
+Fin</pre>
+            <h3 class="text-xl font-semibold mt-4 mb-2"><span class="key-term">Diagrama de flujo</span></h3>
+            <p>Un <span class="key-term">diagrama de flujo</span> usa formas (como óvalos, rectángulos y diamantes) para representar pasos, decisiones y flujos.</p>
+            <img src="https://formacion.intef.es/aulaenabierto/pluginfile.php/4864/mod_book/chapter/5348/Simbolos.jpg" alt="Diagrama de flujo" class="my-4 rounded">
+        </div>
+    </section>
+
+    <!-- Sección 7 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-list-ol mr-2"></i> 7. Pasos para resolver un problema</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <ol class="list-decimal ml-6">
+                <li>Entender el <span class="key-term">problema</span>.</li>
+                <li>Definir <span class="key-term">entradas</span> y <span class="key-term">salidas</span>.</li>
+                <li>Diseñar el <span class="key-term">algoritmo</span>.</li>
+                <li>Probar el <span class="key-term">algoritmo</span> con casos.</li>
+                <li>Implementar en un <span class="key-term">lenguaje de programación</span>.</li>
+                <li>Depurar y optimizar.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Sección 8 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fab fa-java mr-2"></i> 8. ¿Qué es Java?</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p><span class="key-term">Java</span> es un <span class="key-term">lenguaje de programación</span> orientado a objetos, robusto y multiplataforma, utilizado en aplicaciones empresariales, móviles (Android), y web. Su lema es "escribe una vez, ejecuta en cualquier lugar" gracias a la <span class="key-term">Máquina Virtual de Java (JVM)</span>.</p>
+            <h3 class="text-xl font-semibold mt-4 mb-2">¿Qué es la Máquina Virtual de Java (JVM)?</h3>
+            <p>La <span class="key-term">JVM</span> es un entorno de ejecución que permite correr programas Java en cualquier dispositivo o sistema operativo. Convierte el código Java compilado (bytecode) en instrucciones que el hardware puede entender.</p>
+            <h3 class="text-xl font-semibold mt-4 mb-2">¿Qué es el JDK?</h3>
+            <p>El <span class="key-term">JDK</span> (Java Development Kit) es un conjunto de herramientas para desarrollar aplicaciones Java, incluyendo el compilador (javac), la JVM, y bibliotecas estándar.</p>
+            <h3 class="text-xl font-semibold mt-4 mb-2">¿Qué es una clase en Java?</h3>
+            <p>Una <span class="key-term">clase</span> es una plantilla que define las propiedades (atributos) y comportamientos (métodos) de un objeto. Es la base de la programación orientada a objetos en Java.</p>
+        </div>
+    </section>
+
+    <!-- Sección 9 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-edit mr-2"></i> 9. Editores de código e IDEs para Java</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p><strong><span class="key-term">Editores de código</span>:</strong> <span class="key-term">Visual Studio Code</span> (con extensiones Java), <span class="key-term">Sublime Text</span>.</p>
+            <p><strong><span class="key-term">IDEs</span>:</strong> <span class="key-term">IntelliJ IDEA</span>, <span class="key-term">Eclipse</span>, <span class="key-term">NetBeans</span>.</p>
+            <p><strong><span class="key-term">Editores con IA</span>:</strong> <span class="key-term">GitHub Copilot</span>, integrado en IDEs como IntelliJ para sugerencias de código.</p>
+        </div>
+    </section>
+
+    <!-- Sección 10 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-tools mr-2"></i> 10. Herramientas NoCode</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>Plataformas <span class="key-term">NoCode</span> permiten crear <span class="key-term">software</span> sin programar: <span class="key-term">Bubble</span>, <span class="key-term">Webflow</span>, <span class="key-term">AppGyver</span>.</p>
+        </div>
+    </section>
+
+    <!-- Sección 11 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-network-wired mr-2"></i> 11. Ecosistema de Java</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>El <span class="key-term">ecosistema</span> de Java incluye <span class="key-term">bibliotecas</span>, <span class="key-term">frameworks</span> (como <span class="key-term">Spring</span>, <span class="key-term">Hibernate</span>, <span class="key-term">Quarkus</span>), herramientas de compilación (<span class="key-term">Maven</span>, <span class="key-term">Gradle</span>), y una comunidad activa.</p>
+        </div>
+    </section>
+
+    <!-- Sección 12 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-layer-group mr-2"></i> 12. Frameworks de Java</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>Un <span class="key-term">framework</span> es un conjunto de herramientas y <span class="key-term">bibliotecas</span> que facilita el desarrollo. Ejemplos en Java:</p>
+            <ul class="list-disc ml-6 mt-2">
+                <li><span class="key-term">Spring</span>: Framework para aplicaciones empresariales, ideal para backend.</li>
+                <li><span class="key-term">Hibernate</span>: Framework para mapeo objeto-relacional (ORM).</li>
+                <li><span class="key-term">Quarkus</span>: Framework optimizado para aplicaciones nativas en la nube y microservicios.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección 13 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-server mr-2"></i> 13. Backend</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>El <span class="key-term">backend</span> es la parte del <span class="key-term">software</span> que maneja la <span class="key-term">lógica</span>, <span class="key-term">bases de datos</span> y <span class="key-term">servidores</span>. Ejemplo: <span class="key-term">Java Spring</span>, <span class="key-term">Quarkus</span>.</p>
+        </div>
+    </section>
+
+    <!-- Sección 14 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-desktop mr-2"></i> 14. Frontend</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>El <span class="key-term">frontend</span> es la <span class="key-term">interfaz</span> que el usuario ve e interactúa. Usa <span class="key-term">HTML</span>, <span class="key-term">CSS</span> y, en algunos casos, <span class="key-term">Java</span> con frameworks como <span class="key-term">JavaFX</span>.</p>
+        </div>
+    </section>
+
+    <!-- Sección 15 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-exchange-alt mr-2"></i> 15. Protocolo HTTP</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p><span class="key-term">HTTP</span> (<span class="key-term">HyperText Transfer Protocol</span>) es el protocolo para transferir datos en la <span class="key-term">web</span>. Incluye <span class="key-term">peticiones</span> (<span class="key-term">GET</span>, <span class="key-term">POST</span>) y <span class="key-term">respuestas</span> (<span class="key-term">200 OK</span>, <span class="key-term">404 Not Found</span>).</p>
+        </div>
+    </section>
+
+    <!-- Sección 16 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-globe mr-2"></i> 16. Servidor web</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p>Un <span class="key-term">servidor web</span> es un <span class="key-term">software</span> o <span class="key-term">hardware</span> que responde a <span class="key-term">peticiones HTTP</span>, sirviendo contenido como páginas web. Ejemplo: <span class="key-term">Apache Tomcat</span>, <span class="key-term">Jetty</span>.</p>
+        </div>
+    </section>
+
+    <!-- Sección 17 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fas fa-cloud mr-2"></i> 17. Hosting y Dominio</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <p><strong><span class="key-term">Hosting</span>:</strong> Servicio que almacena tu sitio web en <span class="key-term">servidores</span>. Ejemplo: <span class="key-term">AWS</span>, <span class="key-term">Hostinger</span>.</p>
+            <p><strong><span class="key-term">Dominio</span>:</strong> La dirección de tu sitio web, como <span class="key-term">www.ejemplo.com</span>.</p>
+        </div>
+    </section>
+
+    <!-- Sección 18 -->
+    <section class="mb-12 section">
+        <h2 class="text-3xl font-semibold mb-4 section-title"><i class="fab fa-java mr-2"></i> 18. Fundamentos de Java</h2>
+        <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-2">Primer programa: Hola Mundo</h3>
+            <pre class="bg-gray-200 p-2 rounded">public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola, Mundo!");
+    }
+}</pre>
+            <p>Guarda este código en un archivo <code>HolaMundo.java</code>, compílalo con <code>javac HolaMundo.java</code> y ejecútalo con <code>java HolaMundo</code>.</p>
+
+            <h3 class="text-xl font-semibold mt-4 mb-2">Tipos de datos en Java</h3>
+            <ul class="list-disc ml-6">
+                <li><strong>Primitivos:</strong>
+                    <ul class="list-circle ml-6">
+                        <li><span class="key-term">byte</span>: 8 bits (-128 a 127)</li>
+                        <li><span class="key-term">short</span>: 16 bits (-32,768 a 32,767)</li>
+                        <li><span class="key-term">int</span>: 32 bits (-2^31 a 2^31-1)</li>
+                        <li><span class="key-term">long</span>: 64 bits (-2^63 a 2^63-1)</li>
+                        <li><span class="key-term">float</span>: 32 bits (decimales)</li>
+                        <li><span class="key-term">double</span>: 64 bits (decimales precisos)</li>
+                        <li><span class="key-term">char</span>: Carácter Unicode (16 bits)</li>
+                        <li><span class="key-term">boolean</span>: true/false</li>
+                    </ul>
+                </li>
+                <li><strong>Referencia:</strong> <span class="key-term">String</span>, <span class="key-term">Arrays</span>, <span class="key-term">Clases</span></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mt-4 mb-2">Operadores en Java</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Operador</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="5">Aritméticos</td>
+                    <td>+</td>
+                    <td>Suma</td>
+                    <td><code>int a = 10 + 5; // 15</code></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Resta</td>
+                    <td><code>int b = 10 - 5; // 5</code></td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicación</td>
+                    <td><code>int c = 10 * 5; // 50</code></td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>División</td>
+                    <td><code>int d = 10 / 5; // 2</code></td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Módulo</td>
+                    <td><code>int e = 10 % 3; // 1</code></td>
+                </tr>
+                <tr>
+                    <td rowspan="6">Relacionales</td>
+                    <td>==</td>
+                    <td>Igual a</td>
+                    <td><code>boolean f = (10 == 5); // false</code></td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Diferente de</td>
+                    <td><code>boolean g = (10 != 5); // true</code></td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>Mayor que</td>
+                    <td><code>boolean h = (10 > 5); // true</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>Menor que</td>
+                    <td><code>boolean i = (10 < 5); // false</code></td>
+                </tr>
+                <tr>
+                    <td>&gt;=</td>
+                    <td>Mayor o igual que</td>
+                    <td><code>boolean j = (10 >= 10); // true</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;=</td>
+                    <td>Menor o igual que</td>
+                    <td><code>boolean k = (5 <= 10); // true</code></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Lógicos</td>
+                    <td>&&</td>
+                    <td>AND lógico</td>
+                    <td><code>boolean l = (true && false); // false</code></td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>OR lógico</td>
+                    <td><code>boolean m = (true || false); // true</code></td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>NOT lógico</td>
+                    <td><code>boolean n = (!true); // false</code></td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Asignación</td>
+                    <td>=</td>
+                    <td>Asignación simple</td>
+                    <td><code>int o = 10;</code></td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Suma y asigna</td>
+                    <td><code>int p = 10; p += 5; // 15</code></td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Resta y asigna</td>
+                    <td><code>int q = 10; q -= 5; // 5</code></td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplica y asigna</td>
+                    <td><code>int r = 10; r *= 5; // 50</code></td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Divide y asigna</td>
+                    <td><code>int s = 10; s /= 5; // 2</code></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Incremento/Decremento</td>
+                    <td>++</td>
+                    <td>Incrementa en 1</td>
+                    <td><code>int t = 10; t++; // 11</code></td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Decrementa en 1</td>
+                    <td><code>int u = 10; u--; // 9</code></td>
+                </tr>
+                <tr>
+                    <td>Ternario</td>
+                    <td>?:</td>
+                    <td>Condicional compacto</td>
+                    <td><code>String v = (10 > 5) ? "Mayor" : "Menor"; // Mayor</code></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Bit a bit</td>
+                    <td>&</td>
+                    <td>AND a nivel de bits</td>
+                    <td><code>int w = 10 & 5; // 0</code></td>
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>OR a nivel de bits</td>
+                    <td><code>int x = 10 | 5; // 15</code></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3 class="text-xl font-semibold mt-6 mb-2">Ejercicios básicos en Java</h3>
+            <ol class="list-decimal ml-6">
+                <li><strong>Variables:</strong> Crea un programa que declare variables de diferentes tipos (int, double, String, boolean) e imprima sus valores.</li>
+                <pre class="bg-gray-200 p-2 rounded">public class Variables {
+    public static void main(String[] args) {
+        int edad = 25;
+        double altura = 1.75;
+        String nombre = "Juan";
+        boolean esEstudiante = true;
+        System.out.println("Edad: " + edad);
+        System.out.println("Altura: " + altura);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Es estudiante: " + esEstudiante);
+    }
+}</pre>
+                <li><strong>Ternario:</strong> Escribe un programa que use el operador ternario para determinar si un número es par o impar.</li>
+                <pre class="bg-gray-200 p-2 rounded">public class ParImpar {
+    public static void main(String[] args) {
+        int numero = 7;
+        String resultado = (numero % 2 == 0) ? "Par" : "Impar";
+        System.out.println("El número " + numero + " es " + resultado);
+    }
+}</pre>
+            </ol>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 programación en Java. - Arle Morales Ortiz</p>
+    </div>
+</footer>
+</body>
+</html>

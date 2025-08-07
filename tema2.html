@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+        .code-block {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            padding: 16px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+<!-- Header -->
+<header class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">Programación Orientada a Objetos en Java</h1>
+        <p class="text-lg md:text-xl">Orientado por: Arle Morales Ortiz</p>
+        <p class="text-md md:text-lg">Duración: 20 semanas</p>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-8">
+    <section class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-6 text-center">Conceptos de Programación Orientada a Objetos</h2>
+
+        <!-- 1. OOP and Example -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">1. ¿Qué es la Programación Orientada a Objetos?</h3>
+            <p class="text-gray-700 mb-4">
+                La Programación Orientada a Objetos (OOP) es un paradigma de programación que organiza el código en <strong>objetos</strong>, que son instancias de <strong>clases</strong>. Una clase es como un plano que define las propiedades (atributos) y comportamientos (métodos) de un objeto. Los principios clave de OOP incluyen:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li><strong>Encapsulamiento:</strong> Ocultar detalles internos y exponer solo lo necesario.</li>
+                <li><strong>Herencia:</strong> Una clase puede heredar propiedades y métodos de otra.</li>
+                <li><strong>Polimorfismo:</strong> Objetos de diferentes clases pueden ser tratados de manera uniforme.</li>
+                <li><strong>Abstracción:</strong> Simplificar problemas modelando solo lo relevante.</li>
+            </ul>
+            <p class="text-gray-700 mb-4">Ejemplo: Una clase <code>Suma</code> que realiza la suma de dos números, instanciada desde una clase <code>Main</code>.</p>
+            <div class="code-block">
+          <pre><code class="language-java">public class Suma {
+    // Atributos
+    private int numero1;
+    private int numero2;
+
+    // Constructor
+    public Suma(int numero1, int numero2) {
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+    }
+
+    // Método para realizar la suma
+    public int calcularSuma() {
+        return numero1 + numero2;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear una instancia de Suma
+        Suma operacion = new Suma(5, 3);
+        // Llamar al método calcularSuma
+        int resultado = operacion.calcularSuma();
+        System.out.println("La suma de 5 y 3 es: " + resultado);
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mt-4"><strong>Explicación:</strong> La clase <code>Suma</code> define dos atributos (<code>numero1</code>, <code>numero2</code>) y un método (<code>calcularSuma</code>). En la clase <code>Main</code>, se crea una instancia de <code>Suma</code> con los valores 5 y 3, y se llama al método para obtener el resultado (8).</p>
+        </div>
+
+        <!-- 2. Attributes and Methods -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">2. ¿Qué es un Atributo y un Método?</h3>
+            <p class="text-gray-700 mb-4">
+                <strong>Atributo (o Propiedad):</strong> Es una variable que pertenece a una clase y describe una característica del objeto. Por ejemplo, en la clase <code>Suma</code>, <code>numero1</code> y <code>numero2</code> son atributos.
+            </p>
+            <p class="text-gray-700 mb-4">
+                <strong>Método:</strong> Es una función o procedimiento definido dentro de una clase que describe un comportamiento del objeto. Por ejemplo, <code>calcularSuma</code> es un método que realiza la suma de los atributos.
+            </p>
+            <p class="text-gray-700 mb-4">Ejemplo ilustrativo:</p>
+            <div class="code-block">
+          <pre><code class="language-java">public class Persona {
+    // Atributos
+    String nombre;
+    int edad;
+
+    // Método
+    void saludar() {
+        System.out.println("Hola, mi nombre es " + nombre + " y tengo " + edad + " años.");
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mt-4"><strong>Explicación:</strong> <code>nombre</code> y <code>edad</code> son atributos que almacenan datos, mientras que <code>saludar</code> es un método que realiza una acción usando esos datos.</p>
+        </div>
+
+        <!-- 3. Scanner Input -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">3. Entrada por Teclado con Scanner</h3>
+            <p class="text-gray-700 mb-4">
+                La clase <code>Scanner</code> en Java permite leer entrada del usuario desde el teclado. Se encuentra en el paquete <code>java.util</code>.
+            </p>
+            <div class="code-block">
+          <pre><code class="language-java">import java.util.Scanner;
+
+public class EntradaScanner {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar entrada al usuario
+        System.out.print("Ingrese su nombre: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingrese su edad: ");
+        int edad = scanner.nextInt();
+
+        // Mostrar los datos ingresados
+        System.out.println("Nombre: " + nombre + ", Edad: " + edad);
+
+        // Cerrar el scanner
+        scanner.close();
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mt-4"><strong>Explicación:</strong> Se importa <code>Scanner</code>, se crea un objeto para leer datos, se usa <code>nextLine()</code> para cadenas y <code>nextInt()</code> para enteros. Finalmente, se cierra el <code>Scanner</code> para liberar recursos.</p>
+        </div>
+
+        <!-- 4. JOptionPane Input -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">4. Entrada con JOptionPane</h3>
+            <p class="text-gray-700 mb-4">
+                <code>JOptionPane</code> (del paquete <code>javax.swing</code>) permite crear ventanas emergentes para entrada y salida de datos de forma gráfica.
+            </p>
+            <div class="code-block">
+          <pre><code class="language-java">import javax.swing.JOptionPane;
+
+public class EntradaJOptionPane {
+    public static void main(String[] args) {
+        // Solicitar entrada al usuario
+        String nombre = JOptionPane.showInputDialog("Ingrese su nombre:");
+        String edadStr = JOptionPane.showInputDialog("Ingrese su edad:");
+
+        // Convertir edad a entero
+        int edad = Integer.parseInt(edadStr);
+
+        // Mostrar mensaje
+        JOptionPane.showMessageDialog(null, "Nombre: " + nombre + ", Edad: " + edad);
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mt-4"><strong>Explicación:</strong> <code>showInputDialog</code> muestra una ventana para ingresar datos, y <code>showMessageDialog</code> muestra un mensaje. La entrada de edad se convierte de cadena a entero usando <code>Integer.parseInt</code>.</p>
+        </div>
+
+        <!-- 5. Conversions and String Operations -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">5. Conversiones y Manejo de Cadenas</h3>
+            <p class="text-gray-700 mb-4">
+                <strong>Conversiones con <code>Integer.parseInt</code>:</strong> Convierte una cadena que representa un número en un entero. Ejemplo: <code>Integer.parseInt("123")</code> devuelve <code>123</code>.
+            </p>
+            <p class="text-gray-700 mb-4">
+                <strong>Manejo de Cadenas (<code>String</code>):</strong> Las cadenas son objetos en Java que permiten operaciones como concatenación, obtener longitud, o extraer subcadenas.
+            </p>
+            <div class="code-block">
+          <pre><code class="language-java">public class ManejoCadenas {
+    public static void main(String[] args) {
+        // Conversión de cadena a entero
+        String numeroStr = "42";
+        int numero = Integer.parseInt(numeroStr);
+        System.out.println("Número convertido: " + numero);
+
+        // Operaciones con cadenas
+        String texto = "Hola, Mundo!";
+        System.out.println("Longitud: " + texto.length());
+        System.out.println("Subcadena: " + texto.substring(0, 4));
+        System.out.println("Mayúsculas: " + texto.toUpperCase());
+        System.out.println("Concatenación: " + texto + " Bienvenido");
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mt-4"><strong>Explicación:</strong> <code>Integer.parseInt</code> convierte una cadena a entero. Métodos como <code>length()</code>, <code>substring()</code>, y <code>toUpperCase()</code> manipulan cadenas.</p>
+        </div>
+
+        <!-- 6. Decision Structures -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">6. Estructuras de Decisión: if y switch</h3>
+            <p class="text-gray-700 mb-4">
+                <strong>Estructura <code>if</code>:</strong> Evalúa una condición y ejecuta un bloque de código si es verdadera. Puede incluir <code>else if</code> y <code>else</code>.
+            </p>
+            <div class="code-block">
+          <pre><code class="language-java">public class EjemploIf {
+    public static void main(String[] args) {
+        int edad = 20;
+
+        if (edad >= 18) {
+            System.out.println("Es mayor de edad.");
+        } else if (edad >= 13) {
+            System.out.println("Es adolescente.");
+        } else {
+            System.out.println("Es menor de edad.");
+        }
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mb-4">
+                <strong>Estructura <code>switch</code>:</strong> Evalúa una variable y ejecuta un bloque según su valor. Ideal para múltiples casos discretos.
+            </p>
+            <div class="code-block">
+          <pre><code class="language-java">public class EjemploSwitch {
+    public static void main(String[] args) {
+        int dia = 3;
+        String nombreDia;
+
+        switch (dia) {
+            case 1:
+                nombreDia = "Lunes";
+                break;
+            case 2:
+                nombreDia = "Martes";
+                break;
+            case 3:
+                nombreDia = "Miércoles";
+                break;
+            default:
+                nombreDia = "Día no válido";
+                break;
+        }
+        System.out.println("El día es: " + nombreDia);
+    }
+}
+</code></pre>
+            </div>
+            <p class="text-gray-700 mt-4"><strong>Explicación:</strong> <code>if</code> evalúa condiciones secuencialmente, mientras que <code>switch</code> selecciona un caso específico. <code>break</code> evita que se ejecuten casos posteriores en <code>switch</code>.</p>
+        </div>
+
+        <!-- Task: Download PDF -->
+        <div class="mb-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-blue-600 mb-4">Tarea: Descargar Información en PDF</h3>
+            <p class="text-gray-700 mb-4">
+                Descarga el siguiente archivo PDF que contiene toda la información explicada en esta página:
+            </p>
+            <a href="" class="bg-blue-600 text-white rounded-lg p-4 flex items-center space-x-3 hover:bg-blue-700 transition">
+                <i class="fas fa-download fa-lg"></i>
+                <span class="text-lg font-medium">Descargar PDF</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-blue-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Armenia, Quindío - Arle Morales Ortiz.</p>
+    </div>
+</footer>
+</body>
+</html>
